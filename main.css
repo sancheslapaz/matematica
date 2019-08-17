@@ -45,13 +45,13 @@ header{
     color: lightsteelblue;
     /*background-color: aquamarine;*/
 }
-/*nav{
+nav{
     margin: 5px 0 0 0;
     padding: 20px 0;
     border: 2px solid;
     border-color: darkblue;
     border-radius: 20px;
-}*/
+}
 div{
     width: 90%;
     min-height: 65%;

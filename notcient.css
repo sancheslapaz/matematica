@@ -1,0 +1,557 @@
+/*@charset "UTF-8";*/
+/********************************************************************
+ *****  CSS Documents                                           *****
+ ********************************************************************
+ *****  moz-linear-gradienter(red, green) - Firefox             *****
+ *****  webkit-linear-gradienter(red, green) - Safari, Chrome   *****
+ *****  o-linear-gradienter(red, green) - Opera                 *****
+ ********************************************************************/
+ /*   conteudo: #F2B705
+    cabecalho: #F29F05
+    equivalente: #D97904
+    pepagina: #733702
+    auxiliar: #401801 */
+/********************************************
+ *****              Monitor             *****
+ ***** 736 x 1360 px - Monitor 15.6"    *****
+ ***** 720 x 1280 px - Celular k9       *****
+ ***** 600 x 1024 px - Tablet 7"        *****
+ ********************************************/
+/************************
+ ***** Neutralidade *****
+ ************************/
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, tr, th, td, teble, body, header, nav, div, article, section, aside, footer, button, input{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+    background-color: #FFFFFF;
+    font-family: Arial, "Times New Roman";
+}
+/**************************************
+ ***** TAG de Estrutura da página *****
+ **************************************/
+body{
+    width: 100%;
+    height: 100%;
+    background-color: lightgoldenrodyellow;
+}
+header{
+    width: 90%;
+    min-height: 7%;
+    margin: 0 auto;
+    padding: 3px 0;
+    text-align: center;
+    color: lightsteelblue;
+    /*border-color: aquamarine;
+    border-style: solid;
+    border-radius: 20px;*/
+}
+nav{
+    margin: 5px 0;
+    padding: 20px 0;
+    border: 2px;
+    border-style: solid;
+    border-color: aquamarine;
+    border-radius: 20px;
+}
+div{
+    width: 90%;
+    min-height: 65%;
+    margin: 0 auto;
+    /*background-color: brown;*/
+}
+footer{
+    width: 90%;
+    min-height: 4%;
+    /*margin: 10px auto;*/
+    /*background-color: burlywood;*/
+}
+/****************************************************
+ *****  Estrutura das DIV's do corpo da pagina  *****
+ ****************************************************/
+#wrapper{
+    /*width: 90%;*/
+    min-height: 65%;
+    margin: 2px auto;
+    /*background-color: lightred;*/
+}
+#indice_01{
+    min-height: 25%;
+    margin: 2px auto;
+    /*background-color: lightblue;*/
+}
+#indice_02{
+    min-height: 25%;
+    margin: 2px auto;
+    /*background-color: lightcoral;*/
+}
+#indice_03{
+    min-height: 25%;
+    margin: 2px auto;
+    /*background-color: lightcyan;*/
+}
+#indice_04{
+    min-height: 25%;
+    margin: 2px auto;
+    /*background-color: lightgray;*/
+}
+#indice_05{
+    min-height: 25%;
+    margin: 2px auto;
+    /*background-color: lightgray;*/
+}
+#indice_06{
+    min-height: 25%;
+    margin: 2px auto;
+    /*background-color: lightgray;*/
+}
+#indice_07{
+    min-height: 25%;
+    margin: 2px auto;
+    /*background-color: lightgray;*/
+}
+/**************************************
+ ***** TAG de Estrutura de texto  *****
+ **************************************/
+h1{
+    font-size: 1.6em;
+    font-family: "Times New Roman";
+    font-style: italic;
+    text-shadow: 0.05em 0.05em 0.05em #000000;
+}
+h2{
+    padding: 2px auto;
+    font-size: 1.4em;
+}
+p{
+    padding: 3px auto;
+    font-size: 1.2em;
+    text-align: justify;
+}
+th{
+    font-size:1.4em
+}
+td{
+    text-align: center;
+    font-size: 1.2em
+}
+a:link{
+    color:darkblue;
+}
+a:visited{
+    color:darkmagenta;
+}
+a:hover{
+    color:darkgrey;
+    /*text-decoration:underline;*/
+}
+/**************************************
+ ***** TAG de Estrutura de imagem *****
+ **************************************/
+img{
+    width: 70%;
+    height: 70%;
+    margin: 5px 12.5%;
+    padding: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+}
+/**************************************
+ ***** TAG de Estrutura de tabela *****
+ **************************************/
+table{
+    width: 70%;
+    height: 90%;
+    margin: 5px 12.5%;
+    background-color: lightcyan;
+}
+/**************************************
+ ***** TAG de Estrutura de box    *****
+ **************************************/
+button{
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    padding: 0;
+    background-color: darkblue;
+}
+input{
+	width: 80%
+}
+/**************************************
+ *****     Classe de estrutura    *****
+ **************************************/
+.line_hr{
+    color: darkblue;
+    border-style: solid;
+    border-color: darkblue;
+}
+.a_footer{
+    margin: 10px 16px;
+    font-size: 1.2em;
+}
+.a_nav{
+    margin: 20px;
+    font-size: 1em;
+}
+.box_input{
+	width: 99%;
+	height: 50px;
+    text-align: left;
+}
+.num_input{
+    width: 98%;
+	height: 100%;
+    text-align: right;
+}
+
+.press_bt{
+    width: 65px;
+    height: 20px;
+    margin: 0 7px;
+    padding: 0;
+    background-color: lightgoldenrodyellow;
+}
+
+/********************************************
+ ***** Monitor de computador e Notebook *****
+ *****            Horizintal            *****
+ ********************************************/
+@media only screen and (min-width: 1101px){
+    
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****          Monitor Celular         *****
+ *****          Horizintal              *****
+ ********************************************/
+@media only screen and (min-width:991px) and (max-width:1100px){
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        width: 75%;
+        margin: 5px 12.5%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 75%;
+        margin: 5px 12.5%;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****          Monitor Tablet          *****
+ *****          Horizintal              *****
+ ********************************************/
+@media only screen and (min-width: 871px) and (max-width:990px){
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 12.5%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 80%;
+        height: 90%;
+        margin: 5px 7.5%;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ ***** Monitor de computador e Notebook *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (min-width: 761px) and (max-width: 870px){
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 15%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 95%;
+        height: 90%;
+        margin: 5px 2.5%;
+    }
+    /**************************************
+     *****     Classe de estrutura    *****
+     **************************************/
+    .a_footer{
+        margin: 0 16px;
+        font-size: 1em;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****          Monitor Celular         *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (min-width: 650px) and (max-width: 760px){
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h1{
+        font-size: 1.4em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 1em;
+    }
+    th{
+        font-size: 1.2em
+    }
+    td{
+        font-size: 1em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 15%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 95%;
+        height: 90%;
+        margin: 5px 2.5%;
+    }
+    /**************************************
+     *****     Classe de estrutura    *****
+     **************************************/
+    .a_footer{
+        margin: 0 16px;
+        font-size: 1em;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****           Monitor Tablet         *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (min-width: 530px) and (max-width: 649px){
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h1{
+        font-size: 1.2em;
+    }
+    h2{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    th{
+        font-size: 1em
+    }
+    td{
+        font-size: 0.8em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 15%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 95%;
+        height: 90%;
+        margin: 5px 2.5%;
+    }
+    /**************************************
+     *****     Classe de estrutura    *****
+     **************************************/
+    .a_footer{
+        margin: 0 16px;
+        font-size: 0.8em;
+    }
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****           Monitor                *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (min-width: 410px) and (max-width: 529px){
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h1{
+        font-size: 1em;
+    }
+    h2{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: 0.6em;
+    }
+    th{
+        font-size: 0.8em
+    }
+    td{
+        font-size: 0.6em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 15%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 95%;
+        height: 90%;
+        margin: 5px 2.5%;
+    }
+    /**************************************
+     *****     Classe de estrutura    *****
+     **************************************/
+    .a_footer{
+        margin: 0 16px;
+        font-size: 0.8em;
+    }
+		.a_nav{
+		margin: 15px;
+	}
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****           Monitor                *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (min-width: 270px) and (max-width: 409px){
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h1{
+        font-size: 0.8em;
+    }
+    h2{
+        font-size: 0.6em;
+    }
+    p{
+        font-size: 0.4em;
+    }
+    th{
+        font-size: 0.6em
+    }
+    td{
+        font-size: 0.4em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 15%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 95%;
+        height: 90%;
+        margin: 5px 2.5%;
+    }
+    /**************************************
+     *****     Classe de estrutura    *****
+     **************************************/
+    .a_footer{
+        margin: 0 16px;
+        font-size: 0.6em;
+    }
+	.a_nav{
+		margin: 5px;
+	}
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+@media only screen and (max-width: 269px){
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h1{
+        font-size: 0.6em;
+    }
+    h2{
+        font-size: 0.4em;
+    }
+    p{
+        font-size: 0.2em;
+    }
+    th{
+        font-size: 0.4em
+    }
+    td{
+        font-size: 0.2em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 15%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 95%;
+        height: 75%;
+        margin: 5px 2.5%;
+    }
+    /**************************************
+     *****     Classe de estrutura    *****
+     **************************************/
+    .a_footer{
+        margin: 0 16px;
+        font-size: 0.6em;
+    }
+	.a_nav{
+		margin: 2.5px;
+	}
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+

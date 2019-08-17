@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Notação Científica</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Notação Cientifica">
+        <link type="text/css" rel="stylesheet" href="notcient.css">	<!-- Definição de estilo no arquivo CSS -->
+    </head>
+     <body>
+        <header>
+            <h1>Notação Científica na elétrica</h1>
+            <nav id="notinic">
+                <a href="#wrapper" title="Introdução" class="a_nav">1</a>
+                <a href="#indice_01" title="Notação Cientifica" class="a_nav">1.1</a>
+                <a href="#indice_02" title="Mùltiplos e submúltiplos em Elétrica" class="a_nav">1.2</a>
+                <a href="#indice_03" title="Exercícios resolvidos" class="a_nav">1.3</a>
+                <a href="#indice_04" title="Exercícios Propóstos" class="a_nav">1.4</a>
+				<a href="#indice_05" title="resolução dos exercícios Propóstos" class="a_nav">1.5</a>
+            </nav>
+        </header>
+        <div>
+            <article id="wrapper" >
+                <h2>1 - Introdução</h2>
+                <p>&emsp;Notação científica nada mais é do que uma maneira de simplificar a visualização dos números em engenharia, e deste modo facilitar o cálculo devido a números muito grandes ou muito pequenos.<br>
+                &emsp;Em uma calculadora de quatro operações, por exemplo, a quantidade máxima de digitos é “oito”, isto nos dá um limite para cálculos com valores de até oito digitos.<br>
+                &emsp;Já com a notação científica podemos trabalhar números muitos maiores, mesmo as calculadoras científicas possuem uma limitação, devido ao armazenamento de valores ter um valor finito, mas podemos trabalhar com a notação científica tranquilamente, pois não iremos ultrapassar este valor.<br>
+                &emsp;Notação científica em potência de 10 (SI):</p>
+                <table border="2">
+                    <tr><th colspan="4">Múltiplos e Submúltiplos</th></tr>
+                    <tr><td>Descrição</td><td>Símbolo</td><td>Potência de 10</td><td>Valor nominal</td></tr>
+                    <tr><td>Yotta</td><td>Y</td><td>10<sup>24</sup></td><td>1.000.000.000.000.000.000.000.000</td></tr>
+                    <tr><td>Zetta</td><td>Z</td><td>10<sup>21</sup></td><td>1.000.000.000.000.000.000.000</td></tr>
+                    <tr><td>Exa</td><td>E</td><td>10<sup>18</sup></td><td>1.000.000.000.000.000.000</td></tr>
+                    <tr><td>Peta</td><td>P</td><td>10<sup>15</sup></td><td>1.000.000.000.000.000</td></tr>
+                    <tr><td>Tera</td><td>T</td><td>10<sup>12</sup></td><td>1.000.000.000.000</td></tr>
+                    <tr><td>Giga</td><td>G</td><td>10<sup>9</sup></td><td>1.000.000.000</td></tr>
+                    <tr><td>Mega</td><td>M</td><td>10<sup>6</sup></td><td>1.000.000</td></tr>
+                    <tr><td>Quilo</td><td>k</td><td>10<sup>3</sup></td><td>1.000</td></tr>
+                    <tr><td> </td><td> </td><td>10<sup>0</sup></td><td>1</td></tr>
+                    <tr><td>mili</td><td>m</td><td>10<sup>-3</sup></td><td>0,001</td></tr>
+                    <tr><td>micro</td><td>&micro;</td><td>10<sup>-6</sup></td><td>0,000001</td></tr>
+                    <tr><td>nano</td><td>n</td><td>10<sup>-9</sup></td><td>0,000000001</td></tr>
+                    <tr><td>pico</td><td>p</td><td>10<sup>-12</sup></td><td>0,000000000001</td></tr>
+                    <tr><td>fento</td><td>f</td><td>10<sup>-15</sup></td><td>0,000000000000001</td></tr>
+                    <tr><td>atto</td><td>a</td><td>10<sup>-18</sup></td><td>0,000000000000000001</td></tr>
+                    <tr><td>zepto</td><td>z</td><td>10<sup>-21</sup></td><td>0,000000000000000000001</td></tr>
+                    <tr><td>yocto</td><td>y</td><td>10<sup>-24</sup></td><td>0,000000000000000000000001</td></tr>
+                </table>
+                <img src="figura_06.png"><br>
+                <p>&emsp;Outros símbolos:</p>
+                <table border="2">
+                    <tr><th colspan="4">Múltiplos e Submúltiplos</th></tr>
+                    <tr><td>Descrição</td><td>Símbolo</td><td>Potência de 10</td><td>Valor nominal</td></tr>
+                    <tr><td>hecto</td><td>h</td><td>10<sup>2</sup></td><td>100</td></tr>
+                    <tr><td>deca</td><td>da</td><td>10<sup>1</sup></td><td>10</td></tr>
+                    <tr><td> </td><td> </td><td>10<sup>0</sup></td><td>1</td></tr>
+                    <tr><td>deci</td><td>d</td><td>10<sup>-1</sup></td><td>0,1</td></tr>
+                    <tr><td>centi</td><td>c</td><td>10<sup>-2</sup></td><td>0,01</td></tr>
+                </table>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+                <hr class="line_hr">
+                <section id="indice_01">
+                    <h2>1.1 - A notação científica</h2>
+                    <p>&emsp;A notação científica serve para expressar números muito grandes ou muito pequenos. O segredo é multiplicar um número pequeno ou grande por uma potência de 10. A forma de uma notação científica é: m x 10<sup>e</sup> ou m . 10<sup>e</sup>.<br>
+                    &emsp;Onde:<br>
+                    &emsp;&emsp;m significa mantissa;<br>
+                    &emsp;&emsp;e “e” significa ordem de grandeza.<br>
+                    &emsp;&emsp;A mantissa sempre será um valor entre 1 e 999, esses valores podem ser positivos ou negativos.<br>
+                    &emsp;&emsp;2,5 x 10<sup>e</sup><br>
+                    &emsp;&emsp;26,58 x 10<sup>e</sup><br>
+                    &emsp;&emsp;550,97 x 10<sup>e</sup><br>
+                    &emsp;Já o expoente vária de três em três, positiva ou negativamente, ou seja de mil em mil, tanto dividindo quanto multiplicando.<br>
+                    &emsp;&emsp;2,5 x 10<sup>3</sup><br>
+                    &emsp;&emsp;26,58 x 10<sup>-12</sup><br>
+                    &emsp;&emsp;550,97 x 10<sup>-9</sup><br>
+                    &emsp;Assim podemos observar na “figura 1” o que foi dito até o momento:<br>
+                    <img src="figura_01.png"><br>
+                    &emsp;Observemos um exemplo prático do que foi transcrito anteriormente, com os expoentes positivos, pegamos o 2,5 x 10<sup>3</sup> e o posicionamos na tabela, como mostrado na figura 2:<br>
+                    <img src="figura_02.png"><br>
+                    &emsp;então multiplicamos o valor por mil e sabemos o valor representado de forma natural:<br>
+                    &emsp;&emsp;2,5 x10<sup>3</sup> = 2,5 x 1.000 = 2.500<br>
+                    &emsp;Observamos, também, esta disposição de outra forma como abaixo demonstrado na figura 3:<br>
+                    <img src="figura_03.png"><br>
+                    &emsp;Montamos o nosso sistema de outra forma:<br>
+                    &emsp;&emsp;10<sup>3</sup> = 10 x 10<sup>2</sup> = 10 x 10 x 10<sup>1</sup> = 10 x 10 x 10, assim nosso cálculo será,<br>
+                    &emsp;&emsp;2,5 x 10<sup>3</sup> = 2,5 x 10 x 10<sup>2</sup> = 25 x 10<sup>2</sup> = 25 x 10 x 10<sup>1</sup> = 250 x 10 = 2500<br>
+                    &emsp;Façam agora paraos seguintes valores<br>
+                    &emsp;&emsp;a) 3,6 x 10<sup>6</sup><br>
+                    &emsp;&emsp;b) 550,97 x 10<sup>9</sup><br>
+                    &emsp;&emsp;c) 26,58 x 10<sup>12</sup><br>
+                    &emsp;Observemos, agora, um exemplo prático do que foi transcrito anteriormente, com os expoentes negativos, pegamos o 2,5 x 10<sup>-3</sup> e o posicionamos na tabela, como mostradona figura 4:<br>
+                    <img src="figura_04.png"><br>
+                    &emsp;então multiplicamos  o valor por mil e sabemos o valor representado de forma natural:<br>
+                    &emsp;&emsp;2,5 x<sup>-3</sup> = 2,5 x 0,001 = 0,0025<br>
+                    &emsp;Observamos, também, esta disposição de outra forma como abaixo demonstradona figura 5:<br>
+                    <img src="figura_05.png"><br>
+                    &emsp;Montamos o nosso sistema de outra forma:<br>
+                    &emsp;&emsp;10<sup>-3</sup> = 0,1 x 10<sup>-2</sup> = 0,1 x 0,1 x 10<sup>-1</sup> = 0,1 x 0,1 x 0,1, assim nosso calculo será,<br>
+                    &emsp;&emsp;2,5 x 10<sup>-2</sup> = 2,5 x 0,1 x 10<sup>-2</sup> = 0,25 x 10<sup>-2</sup> = 0,25 x 0,1 x 10<sup>-1</sup> = 0,025 x 10<sup>-1</sup> = 0,025 x 0,1 = 0,0025<br>
+                    &emsp;Façam agora paraos seguintes valores<br>
+                    &emsp;&emsp;a) 3,6 x 10<sup>-6</sup><br>
+                    &emsp;&emsp;b) 550,97 x 10<sup>-9</sup><br>
+                    &emsp;&emsp;c) 26,58 x 10<sup>-12</sup><br></p>
+                </section>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+                <hr class="line_hr">
+                <section id="indice_02">
+                    <h2>1.2 – Múltiplos e submúltiplos</h2>
+                    <p>&emsp;Abaixo mostramos as tabelas com múltiplos e submúltiplos mais usados na área técnica ou de engenharia elétrica:<br>
+                    </p>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Múltiplos e submúltiplos mais comuns de resistência elétrica:</th></tr>
+                        <tr><td>M&Omega;</td><td>Megaohm</td><td>10<sup>6</sup> &Omega;</td><td>1.000.000 &Omega;</td></tr>
+                        <tr><td>k&Omega;</td><td>Quiloohm</td><td>10<sup>3</sup> &Omega;</td><td>1.000 &Omega;</td></tr>
+                        <tr><td>&Omega;</td><td>Ohm</td><td>10<sup>0</sup> &Omega;</td><td>1 &Omega;</td></tr>
+                        <tr><td>m&Omega;</td><td>miliohm</td><td>10<sup>-3</sup> &Omega;</td><td>0,001 &Omega;</td></tr>
+                    </table>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Múltiplos e submúltiplos mais comuns de capacitância elétrica:</th></tr>
+                        <tr><td>mF</td><td>miliFarad</td><td>10<sup>-3</sup> F</td><td>0,001 F</td></tr>
+                        <tr><td>&micro;F</td><td>microFarad</td><td>10<sup>-6</sup> F</td><td>0,000001 F</td></tr>
+                        <tr><td>nF</td><td>nanoFarad</td><td>10<sup>-9</sup> F</td><td>0,000000001 F</td></tr>
+                        <tr><td>pF</td><td>picoFarad</td><td>10<sup>-12</sup> F</td><td>0,000000000001 F</td></tr>
+                    </table>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Múltiplos e submúltiplos mais comuns de indutância elétrica:</th></tr>
+                        <tr><td>H</td><td>Henry</td><td>10<sup>0</sup> H</td><td>1 H</td></tr>
+                        <tr><td>mH</td><td>miliHenry</td><td>10<sup>-3</sup> H</td><td>0,001 H</td></tr>
+                        <tr><td>&micro;H</td><td>microHenry</td><td>10<sup>-6</sup> H</td><td>0,000001 H</td></tr>
+                        <tr><td>nH</td><td>namoHenry</td><td>10<sup>-9</sup> H</td><td>0,000000001 H</td></tr>
+                    </table>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Múltiplos e submúltiplos mais comuns de tensão elétrica:</th></tr>
+                        <tr><td>MV</td><td>MegaVolt</td><td>10<sup>6</sup> V</td><td>1.000.000 V</td></tr>
+                        <tr><td>kV</td><td>QuiloVolt</td><td>10<sup>3</sup> V</td><td>1.000 V</td></tr>
+                        <tr><td>V</td><td>Volt</td><td>10<sup>0</sup> V</td><td>1 V</td></tr>
+                        <tr><td>mV</td><td>miliVolt</td><td>10<sup>-3</sup> V</td><td>0,001V</td></tr>
+                    </table>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Múltiplos e submúltiplos mais comuns de corrente elétrica:</th></tr>
+                        <tr><td>kA</td><td>QuiloAmpere</td><td>10<sup>3</sup> A</td><td>1.000 A</td></tr>
+                        <tr><td>A</td><td>Ampere</td><td>10<sup>0</sup>A</td><td>1 A</td></tr>
+                        <tr><td>mA</td><td>miliAmpere</td><td>10<sup>-3</sup> A</td><td>0,001 A</td></tr>
+                        <tr><td>&micro;A</td><td>microAmpere</td><td>10<sup>-6</sup> A</td><td>0,00000 A</td></tr>
+                    </table>
+                    <hr>
+                     <table border="2">
+                        <tr><th colspan="4">Múltiplos e submúltiplos mais comuns da potência elétrica:</th></tr>
+                        <tr><td>GW</td><td>GigaWatt</td><td>10<sup>9</sup> W</td><td>1.000.000.000 W</td></tr>
+                        <tr><td>MW</td><td>MegaWatt</td><td>10<sup>6</sup> W</td><td>1.000.000 W</td></tr>
+                        <tr><td>kW</td><td>QuiloWatt</td><td>10<sup>3</sup> W</td><td>1.000 W</td></tr>
+                        <tr><td>W</td><td>Watt</td><td>10<sup>0</sup> W</td><td>1 W</td></tr>
+                    </table>
+                </section>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+                <hr class="line_hr">
+                <section id="indice_03">
+                    <h2>1.3 - Exercícios resolvidos:</h2>
+                        <hr>
+                        <p>1) Transformar 5.000.000 V em kV:</p><br>
+                            <img src="figura_07.png"><br>
+                            <table border="2">
+                                <tr><th>Resolução</th></tr>
+                                <tr>
+                                    <td>
+                                        &emsp;5.000.000 V&ensp;&#8658;&ensp;x kV&ensp;=&ensp;
+                                        (5.000.000&ensp;&divide;&ensp;1.000) kV
+                                        &ensp;=&ensp;5.000 kV&emsp;
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+                        <p>2) Transformar 0,0000056 A em μA:</p><br>
+                            <img src="figura_08.png"><br>
+                            <table border="2">
+                                <tr><th>Resolução</th></tr>
+                                <tr>
+                                    <td>
+                                        &emsp;0,0000056 a&ensp;&#8658;&ensp;x &micro;A&ensp;=&ensp;
+                                        (0,0000056&ensp;&times;&ensp;1.000.000) &micro;A
+                                        &ensp;=&ensp;5,6 &micro;A&emsp;
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+                        <p>3) Transformar 2,4 W em mW:</p><br>
+                            <img src="figura_09.png"><br>
+                            <table border="2">
+                                <tr><th>Resolução</th></tr>
+                                <tr>
+                                    <td>
+                                        &emsp;2,4 W&ensp;&#8658;&ensp;x mW&ensp;=&ensp;
+                                        (2,4&ensp;&times;&ensp;1.000) mW
+                                        &ensp;=&ensp;2.400 mW&emsp;
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+                        <p>4) Transformar 6 μW em W:</p><br>
+                            <img src="figura_10.png"><br>
+                            <table border="2">
+                                <tr><th>Resolução</th></tr>
+                                <tr>
+                                    <td>
+                                        &emsp;6 &micro;W&ensp;&#8658;&ensp;x W&ensp;=&ensp;
+                                        (6&ensp;&divide;&ensp;1.000.000) W
+                                        &ensp;=&ensp;0,000006 W&emsp;
+                                    </td>
+                                </tr>
+                            </table>
+                            <hr>
+                        <p>5) Transformar 600 μW em mW:</p><br>
+                            <img src="figura_11.png"><br>
+                            <table border="2">
+                                <tr><th>Resolução</th></tr>
+                                <tr>
+                                    <td>
+                                        &emsp;600 &micro;W&ensp;&#8658;&ensp;x mW&ensp;=&ensp;
+                                        [(600&ensp;&divide;&ensp;1.000)&ensp;&times;&ensp;1.000] mW
+                                        &ensp;=&ensp;600 mW&emsp;
+                                    </td>
+                                </tr>
+                            </table>
+                    </section>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+                <hr class="line_hr">
+                <section id="indice_04">
+                    <h2>1.4 – Exercícios propostos:</h2>
+                    <p>1) Preencha as lacunas que faltam:</p>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Múltiplos</th></tr>
+                        <tr>
+							<td>T</td>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+						</tr>
+                        <tr>
+							<td><input type="text" /></td>
+							<td><input type="text" /></td>
+							<td><input type="text" /></td>
+							<td>1.000.000.000</td>
+						<tr>
+						<tr>
+							<td><input/ type="text"></td>
+							<td>Mega</td>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+						</tr>
+                        <tr>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+							<td>10<sup>3</sup></td>
+							<td><input type="text"/></td>
+						<tr>
+                    </table>
+                    <hr>
+					<table border="2">
+                        <tr><th colspan="4">Múltiplos</th></tr>
+                        <tr>
+							<td>m</td>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+						</tr>
+                        <tr>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+							<td>0,000001</td>
+						<tr>
+						<tr>
+							<td><input type="text"/></td>
+							<td>nano</td>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+						</tr>
+                        <tr>
+							<td><input type="text"/></td>
+							<td><input type="text"/></td>
+							<td>10<sup>-12</sup></td>
+							<td><input type="text"/></td>
+						<tr>
+                    </table>
+					<hr>
+					<p>2) Efetue as conversões abaixo:</p>
+					<p>&emsp;a) 12 V em mV</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td><input type="text" class="box_input"/></td></tr>
+					</table>
+                    <p>&emsp;b) 0,0000235 A em μA</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td><input type="text" class="box_input"/></td></tr>
+					</table>
+                    <p>&emsp;c) 589.000 W em MW</p>
+                    <table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td><input type="text" class="box_input"/></td></tr>
+					</table>
+					<p>&emsp;d) 0,005 nV em pV</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td><input type="text" class="box_input"/></td></tr>
+					</table>
+                    <p>&emsp;e) 5.125 A em kA</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td><input type="text" class="box_input"/></td></tr>
+					</table>
+                </section>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+				<hr class="line_hr">
+                <section id="indice_05">
+				 <h2>1.5 – Resolução dos exercícios propostos:</h2>
+                    <p>1) Pressione o botão e observe as lacunas que faltam:</p>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Múltiplos</th></tr>
+                        <tr>
+							<td>T</td>
+							<td id="texto01">
+								<button id="b01"></button>
+							</td>
+							<td id="texto02">
+								<button id="b02"></button>
+							</td>
+							<td id="texto03">
+								<button id="b03"></button>
+							</td>
+						</tr>
+                        <tr>
+							<td id="texto04">
+								<button id="b04"></button>
+							</td>
+							<td id="texto05">
+								<button id="b05"></button>
+							</td>
+							<td id="texto06">
+								<button id="b06"></button>
+							</td>
+							<td>1.000.000.000</td></tr>
+                        <tr>
+							<td id="texto07">
+								<button id="b07"></button>
+							</td>
+							<td>Mega</td>
+							<td id="texto08">
+								<button id="b08"></button>
+							</td>
+							<td id="texto09">
+								<button id="b09"></button>
+							</td>
+						</tr>
+						<tr>
+							<td id="texto10">
+							<button id="b10"></button>
+							</td>
+							<td id="texto11">
+								<button id="b11"></button>
+							</td>
+							<td>10<sup>3</sup></td>
+							<td id="texto12">
+								<button id="b12"></button>
+							</td>
+						</tr>
+                    </table>
+                    <hr>
+                    <table border="2">
+                        <tr><th colspan="4">Submúltiplos</th></tr>
+						<tr>
+							<td>m</td>
+							<td id="texto13">
+								<button id="b13"></button>
+							</td>
+							<td id="texto14">
+								<button id="b14"></button>
+							</td>
+							<td id="texto15">
+								<button id="b15"></button>
+							</td>
+						</tr>
+                        <tr>
+							<td id="texto16">
+								<button id="b16"></button>
+							</td>
+							<td id="texto17">
+								<button id="b17"></button>
+							</td>
+							<td id="texto18">
+								<button id="b18"></button>
+							</td>
+							<td>0,000001</td>
+                        </tr>
+                        <tr>
+							<td id="texto19">
+								<button id="b19"></button>
+							</td>
+							<td>nano</td>
+							<td id="texto20">
+								<button id="b20"></button>
+							</td>
+							<td id="texto21">
+								<button id="b21"></button>
+							</td>
+						</tr>
+						<tr>
+							<td id="texto22">
+							     <button id="b22"></button>
+							</td>
+							<td id="texto23">
+								<button id="b23"></button>
+							</td>
+							<td>10<sup>-12</sup></td>
+							<td id="texto24">
+								<button id="b24"></button>
+							</td>
+						</tr>
+						
+						</table>
+					<hr>
+					<p>2) Pressione o botão e observe a resolução das conversões abaixo:</p>
+					<p>&emsp;a) 12 V em mV</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td id="texto25"><button id="b25"></button></td></tr>
+					</table>
+                    <p>&emsp;b) 0,0000235 A em μA</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td id="texto26"><button id="b26"></button></td></tr>
+					</table>
+                    <p>&emsp;c) 589.000 W em MW</p>
+                    <table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td id="texto27"><button id="b27"></button></td></tr>
+					</table>
+					<p>&emsp;d) 0,005 nV em pV</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td id="texto28"><button id="b28"></button></td></tr>
+					</table>
+                    <p>&emsp;e) 5.125 A em kA</p>
+					<table border="2">
+						<tr><th>Faça a resolução do exercício</th></tr>
+						<tr><td id="texto29"><button id="b29"></button></td></tr>
+					</table>
+                </section>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+				<hr class="line_hr">
+				<section id="indice_06">
+					<h2>1.6 – Transformação de um base para diversas bases:</h2>
+					<table border="2">
+						<tr>
+							<th rowspan="4">Múltiplos</th>
+							<td id="texto30"></td>
+							<td>x 10<sup>12</sup></td>
+							<td>Tera (T)</td>
+						</tr>
+						<tr><td id="texto31"></td><td>x 10<sup>9</sup></td><td>Giga (G)</td></tr>
+						<tr><td id="texto32"></td><td>x 10<sup>6</sup></td><td>Mega (M)</td></tr>
+						<tr><td id="texto33"></td><td>x 10<sup>3</sup></td><td>Quilo (k)</td></tr>
+						<tr>
+							<td><button id="b30" class="press_bt">Pressione</button></td>
+							<td>
+								<div>
+									<input type="number" id="numero" value=0 class="num_input" />
+								</div>
+							</td>
+							<td>x 10<sup>0</sup></td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th rowspan="4">Submúltiplos</th>
+							<td id="texto34"></td>
+							<td>x 10<sup>-3</sup></td>
+							<td>mili (m)</td>
+                        </tr>
+						<tr><td id="texto35"></td><td>x 10<sup>-6</sup></td><td>micro (&micro;)</td></tr>
+						<tr><td id="texto36"></td><td>x 10<sup>-9</sup></td><td>nano (n)</td></tr>
+						<tr><td id="texto37"></td><td>x 10<sup>-12</sup></td><td>pico (p)</td></tr>
+					</table>
+				 </section>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+				<hr class="line_hr">
+				<section id="indice_07">
+					<h2>1.7 – Transformação de um base para outra bases:</h2>
+					<table border="2">
+						<tr>
+							<th rowspan="3"><button id="b31" class="press_bt">Pressione</button></th>
+							<td>Valor</td>
+							<td>Descrição</td>
+						</tr>
+						<tr>
+							<td><input type="number" id="grand" value=0 class="num_input" /></td>
+							<td>
+				                <select id="de">
+								    <option value="T">Tera</option>
+								    <option value="G">Giga</option>
+								    <option value="M">Mega</option>
+								    <option value="k">Quilo</option>
+								    <option value="v"> </option>
+								    <option value="m">mili</option>
+								    <option value="m1">micro</option>
+								    <option value="n">nano</option>
+								    <option value="p">pico</option>
+							     </select>
+							</td>
+						</tr>
+						<tr>
+							<td id="texto38"></td>
+							<td>
+				                <select id="para">
+								    <option value="T">Tera</option>
+								    <option value="G">Giga</option>
+								    <option value="M">Mega</option>
+								    <option value="k">Quilo</option>
+								    <option value="v"> </option>
+								    <option value="m">mili</option>
+								    <option value="m1">micro</option>
+								    <option value="n">nano</option>
+								    <option value="p">pico</option>
+                                </select>
+							</td>
+						</tr>
+					</table>
+				 </section>
+				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
+				<hr class="line_hr">
+            </article>
+            <!-- <aside></aside> -->
+        </div>
+        <footer>
+            <script src="notcient.js"></script>
+            <a href = "https://sancheslapaz.github.io/matematica/" title="Matemática Aplicada" class="a_footer">Retornar</a>
+        </footer>
+    </body>
+</html>
