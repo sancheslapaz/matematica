@@ -219,9 +219,7 @@ input{
  ***** Monitor de computador e Notebook *****
  *****            Horizintal            *****
  ********************************************/
-@media only screen and (min-width: 1101px){
-    
-}
+/*@media only screen and (min-width: 1101px){}*/
 /********************************************
  *****              Fim                 *****
  ********************************************/
@@ -398,6 +396,8 @@ input{
         margin: 0 16px;
         font-size: 0.8em;
     }
+	.a_nav{
+    margin: 15px;
 }
 /********************************************
  *****              Fim                 *****
@@ -447,8 +447,9 @@ input{
         margin: 0 16px;
         font-size: 0.8em;
     }
-		.a_nav{
-		margin: 15px;
+	.a_nav{
+		margin: 10px;
+		font-size: 0.8em;
 	}
 }
 /********************************************
@@ -501,6 +502,7 @@ input{
     }
 	.a_nav{
 		margin: 5px;
+		font-size: 0.6em;
 	}
 }
 /********************************************
