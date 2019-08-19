@@ -35,8 +35,7 @@ var text = [
 			'texto34',
 			'texto35',
 			'texto36',
-			'texto37',
-			'texto38'	];
+			'texto37'	];
 var BT = [
 			'b01',
 			'b02',
@@ -67,8 +66,7 @@ var BT = [
 			'b27',
 			'b28',
 			'b29',
-			'b30',
-			'b31'	];
+			'b30'	];
 window.addEventListener('load', function(){
 	//*****		Função que verifica o botão pressionado		*****
 	function pressButton(){
@@ -159,21 +157,7 @@ window.addEventListener('load', function(){
 		BT[28].addEventListener('click', function(){
 			text[28].innerHTML = '&emsp;5.125 A&ensp;&#8658;&ensp;x kA&ensp;=&ensp;(5.125&ensp;&divide;&ensp;1.000) kA&ensp;=&ensp;5,125 kA';
 		});
-/*****			Montagenda tabela do item 1.6			*****/
-		//var sBtn = document.getElementById('b30');
-		BT[29].addEventListener('click', function(){
-			var hField = document.getElementById('numero');
-			var hvalue = hField.valueAsNumber;
-			text[29].innerHTML = hvalue/1000000000000;
-			text[30].innerHTML = hvalue/1000000000;
-			text[31].innerHTML = hvalue/1000000;
-			text[32].innerHTML = hvalue/1000;
-			text[33].innerHTML = hvalue*1000;
-			text[34].innerHTML = hvalue*1000000;
-			text[35].innerHTML = hvalue*1000000000;
-			text[36].innerHTML = hvalue*1000000000000;
-    });
-/*****													*****/
+
 	}
 //*****	Fim da função que verifica o botão pressionado	*****
 	var numText;													//Número dos textos
@@ -182,87 +166,34 @@ window.addEventListener('load', function(){
 	var tamButton = BT.length;										//Tamanho da variável botão
 	for(numText = 0; numText < tamText; numText++){					//Inicialização dos identificadores
 		text[numText] = document.getElementById(text[numText]);		//Texto
+		//console.log(text[numText]);
 	}
 	for(numButton = 0; numButton < tamButton; numButton++){			//Inicialização dos identificadores
 		BT[numButton] = document.getElementById(BT[numButton]);		//Botão
+		//console.log(BT[numButton]);
 	}
 	pressButton();
-	//get result01
-	var s1Btn = document.getElementById('b31');
-	s1Btn.addEventListener('click', function(){
-		//var rst = document.getElementById('result01');
-		/*****					Inpur				*****/
-		var h1Field = document.getElementById('grand');
-        var h1value = h1Field.valueAsNumber;
-		/*****			Entrada de valores			*****/
-        var gField = document.getElementById('de');
-        var select = gField.selectedIndex;
-        var gvalue = gField.options[select].value;
-		/*****										*****/
-		/*****			Saída de valores			*****/
-		var g1Field = document.getElementById('para');
-        var select1 = g1Field.selectedIndex;
-        var g1value = g1Field.options[select1].value;
-		/*****										*****/
-		//BT[30] = h1value;
-		if(gvalue == 'T'){
-			h1value *= 1000000000000;
-		}
-		if(gvalue == 'G'){
-			h1value *= 1000000000;
-		}
-		if(gvalue == 'M'){
-			h1value *= 1000000;
-		}
-		if(gvalue == 'k'){
-			h1value *= 1000;
-		}
-		if(gvalue == 'm'){
-			h1value *= 0.001;
-		}
-		if(gvalue == 'm1'){
-			h1value *= 0.000001;
-		}
-		if(gvalue == 'n'){
-			h1value *= 0.000000001;
-		}
-		if(gvalue == 'p'){
-			h1value *= 0.000000000001;
-		}
-		if(g1value == 'T'){
-			text[37].innerHTML = h1value/1000000000000;
-		}
-		if(g1value == 'G'){
-			text[37].innerHTML = h1value/1000000000;
-		}
-		if(g1value == 'M'){
-			text[37].innerHTML = h1value/1000000;
-		}
-		if(g1value == 'k'){
-			text[37].innerHTML = h1value/1000;
-		}
-		if(g1value == 'v'){
-			text[37].innerHTML = h1value;
-		}
-		if(g1value == 'm'){
-			text[37].innerHTML = h1value*1000;
-		}
-		if(g1value == 'm1'){
-			text[37].innerHTML = h1value*1000000;
-		}
-		if(g1value == 'n'){
-			text[37].innerHTML = h1value*1000000000;
-		}
-		if(g1value == 'p'){
-			text[37].innerHTML = h1value*1000000000000;
-		}
-		console.log(text[37]);
-	});
-	function blockKeyCTRL(evt){					//Bloqueio contra cópia da página HTML
-		if ( evt.keyCode == 17 )
-			return false;
-		else
-			return true;
-	}
-	
+
+
+    //console.log('Se ha cargado la pagina');
+    var rst = document.getElementById('texto30');
+    var sBtn = document.getElementById('b30');
+    //console.log(sBtn);
+    sBtn.addEventListener('click', function(){
+        //console.log(sBtn);
+        //console.log(rst);
+        //rst.innerHTML = 'Hola <br/> mundo <div style="background-color: blue"> como estás</div>';
+        //gets hobby
+        var hField = document.getElementById('numero');
+        var hvalue = hField.valueAsNumber;
+        hvalue /= 1000000000000;
+        console.log(hvalue);
+        console.log(hField);
+        rst.innerHTML = hvalue;
+        //get gender
+        //var gField = document.getElementById('gender');
+        //var select = gField.selectedIndex;
+        //var gvalue = gField.options[select].value;
+        //console.log(gvalue);
+    });
 });
