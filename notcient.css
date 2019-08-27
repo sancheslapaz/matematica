@@ -43,9 +43,6 @@ header{
     padding: 3px 0;
     text-align: center;
     color: lightsteelblue;
-    /*border-color: aquamarine;
-    border-style: solid;
-    border-radius: 20px;*/
 }
 nav{
     margin: 5px 0;
@@ -59,13 +56,10 @@ div{
     width: 90%;
     min-height: 65%;
     margin: 0 auto;
-    /*background-color: brown;*/
 }
 footer{
     width: 90%;
     min-height: 4%;
-    /*margin: 10px auto;*/
-    /*background-color: burlywood;*/
 }
 /****************************************************
  *****  Estrutura das DIV's do corpo da pagina  *****
@@ -74,42 +68,10 @@ footer{
     /*width: 90%;*/
     min-height: 65%;
     margin: 2px auto;
-    /*background-color: lightred;*/
 }
-#indice_01{
+#indice_01, #indice_02, #indice_03, #indice_04, #indice_05, #indice_06, #indice_07{
     min-height: 25%;
     margin: 2px auto;
-    /*background-color: lightblue;*/
-}
-#indice_02{
-    min-height: 25%;
-    margin: 2px auto;
-    /*background-color: lightcoral;*/
-}
-#indice_03{
-    min-height: 25%;
-    margin: 2px auto;
-    /*background-color: lightcyan;*/
-}
-#indice_04{
-    min-height: 25%;
-    margin: 2px auto;
-    /*background-color: lightgray;*/
-}
-#indice_05{
-    min-height: 25%;
-    margin: 2px auto;
-    /*background-color: lightgray;*/
-}
-#indice_06{
-    min-height: 25%;
-    margin: 2px auto;
-    /*background-color: lightgray;*/
-}
-#indice_07{
-    min-height: 25%;
-    margin: 2px auto;
-    /*background-color: lightgray;*/
 }
 /**************************************
  ***** TAG de Estrutura de texto  *****
@@ -130,11 +92,11 @@ p{
     text-align: justify;
 }
 th{
-    font-size:1.4em
+    font-size:1.4em;
 }
 td{
     text-align: center;
-    font-size: 1.2em
+    font-size: 1.2em;
 }
 a:link{
     color:darkblue;
@@ -144,7 +106,6 @@ a:visited{
 }
 a:hover{
     color:darkgrey;
-    /*text-decoration:underline;*/
 }
 /**************************************
  ***** TAG de Estrutura de imagem *****
@@ -321,7 +282,7 @@ input{
         font-size: 1em;
     }
     th{
-        font-size: 1.2em
+        font-size: 1.2em;
     }
     td{
         font-size: 1em;
@@ -370,7 +331,7 @@ input{
         font-size: 0.8em;
     }
     th{
-        font-size: 1em
+        font-size: 1em;
     }
     td{
         font-size: 0.8em;
@@ -423,7 +384,7 @@ input{
         font-size: 0.6em;
     }
     th{
-        font-size: 0.8em
+        font-size: 0.8em;
     }
     td{
         font-size: 0.6em;
@@ -476,7 +437,7 @@ input{
         font-size: 0.4em;
     }
     th{
-        font-size: 0.6em
+        font-size: 0.6em;
     }
     td{
         font-size: 0.4em;
@@ -529,7 +490,7 @@ input{
         font-size: 0.2em;
     }
     th{
-        font-size: 0.4em
+        font-size: 0.4em;
     }
     td{
         font-size: 0.2em;
@@ -568,7 +529,7 @@ input{
  *****           Monitor                *****
  *****             Vertical             *****
  ********************************************/
-@media only screen and (max-width: 291px){
+@media only screen and (min-width: 260) and (max-width: 291px){
     /**************************************
      ***** TAG de Estrutura de texto  *****
      **************************************/
@@ -582,7 +543,7 @@ input{
         font-size: 0.2em;
     }
     th{
-        font-size: 0.2em
+        font-size: 0.2em;
     }
     td{
         font-size: 0.2em;
@@ -614,3 +575,149 @@ input{
 	}
 }
 /********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****           Monitor                *****
+ *****             Vertical             *****
+ ********************************************/
+@media only screen and (max-width: 291px){
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h1{
+        font-size: 0.4em;
+    }
+    h2{
+        font-size: 0.2em;
+    }
+    p{
+        font-size: 0.2em;
+    }
+    th{
+        font-size: 0.2em;
+    }
+    td{
+        font-size: 0.2em;
+    }
+    /**************************************
+     ***** TAG de Estrutura de imagem *****
+     **************************************/
+    img{
+        margin: 5px 15%;
+    }
+    /**************************************
+     ***** TAG de Estrutura de tabela *****
+     **************************************/
+    table{
+        width: 95%;
+        height: 75%;
+        margin: 5px 2.5%;
+    }
+    /**************************************
+     *****     Classe de estrutura    *****
+     **************************************/
+    .a_footer{
+        margin: 0 16px;
+        font-size: 0.6em;
+    }
+	.a_nav{
+		margin: 5px;
+		font-size: 0.4em;
+	}
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****				Impressora			*****
+ ********************************************/
+ @media only print{
+	/**************************************
+	 ***** TAG de Estrutura da página *****
+	 **************************************/
+	body{
+		width: 97.6%;
+		height: 98.3%;
+		background-color: #FFFFFF;
+		/*display: none;*/
+	}
+	header, nav, footer{
+		display: none;
+	}
+	div{
+	}
+	/****************************************************
+	 *****  Estrutura das DIV's do corpo da pagina  *****
+	 ****************************************************/
+	#wrapper{
+		width: 97.6%;
+		min-height: 25%;
+		/*margin: 3cm 2cm 2cm 0;*/					/*TRBL*/
+	}
+	#indice_01, #indice_02 #indice_03 #indice_04{
+		width: 97.6%;
+		min-height: 25%;
+		/*margin: 0 2cm 2cm 0;*/					/*TRBL*/
+	}
+	#indice_05, #indice_06, #indice_07{
+		display: none;
+	}
+	/**************************************
+	 ***** TAG de Estrutura de texto  *****
+	 **************************************/
+	h1{
+		display: none;
+	}
+	a:link, a:visited, a:hover{
+		display: none;
+	}
+	/**************************************
+	 ***** TAG de Estrutura de imagem *****
+	 **************************************/
+	img{
+		max-width: 80%;
+		max-height: 80%;
+		margin: 11px 0 11px 100px;
+		border-width: 1px;
+		border-style: solid;
+		border-color: blue;
+	}
+	hr{
+		display: none;
+	}
+	/**************************************
+	 ***** TAG de Estrutura de tabela *****
+	 **************************************/
+	table{
+		min-width: 50%;
+		min-height: 50%;
+		margin: 17px 0 17px 100px;
+		background-color: none;
+	}
+	/**************************************
+	 ***** TAG de Estrutura de box    *****
+	 **************************************/
+	button{
+		dispaly: none;
+	}
+	/**************************************
+	 *****     Classe de estrutura    *****
+	 **************************************/
+	.line_hr, .a_footer, .a_nav, .press_bt{
+		display: none;
+	}
+	.p_table{
+		margin: 17px 0 17px 40px;
+	}
+	.box_input{
+		width: 99%;
+		height: 160px;
+		text-align: left;
+	}
+}
+ /********************************************
+ *****              Fim                 *****
+ ********************************************/

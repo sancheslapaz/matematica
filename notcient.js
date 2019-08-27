@@ -72,6 +72,7 @@ var BT = [
 window.addEventListener('load', function(){
 	//*****		Função que verifica o botão pressionado		*****
 	function pressButton(){
+/*****			Montagem das respostas do item 1.5			*****/
 		BT[0].addEventListener('click', function(){
 			text[0].innerHTML = 'Tera';
 		});
@@ -159,8 +160,8 @@ window.addEventListener('load', function(){
 		BT[28].addEventListener('click', function(){
 			text[28].innerHTML = '&emsp;5.125 A&ensp;&#8658;&ensp;x kA&ensp;=&ensp;(5.125&ensp;&divide;&ensp;1.000) kA&ensp;=&ensp;5,125 kA';
 		});
-/*****			Montagenda tabela do item 1.6			*****/
-		//var sBtn = document.getElementById('b30');
+/*****													*****/
+/*****			Montagem da tabela do item 1.6			*****/
 		BT[29].addEventListener('click', function(){
 			var hField = document.getElementById('numero');
 			var hvalue = hField.valueAsNumber;
@@ -173,6 +174,79 @@ window.addEventListener('load', function(){
 			text[35].innerHTML = hvalue*1000000000;
 			text[36].innerHTML = hvalue*1000000000000;
     });
+/*****													*****/
+/*****			Montagem da tabela do item 1.7			*****/
+		//get result01
+
+		BT[30].addEventListener('click', function(){
+			//var rst = document.getElementById('result01');
+			/*****					Inpur				*****/
+			var h1Field = document.getElementById('grand');
+			var h1value = h1Field.valueAsNumber;
+			/*****			Entrada de valores			*****/
+			var gField = document.getElementById('de');
+			var select = gField.selectedIndex;
+			var gvalue = gField.options[select].value;
+			/*****										*****/
+			/*****			Saída de valores			*****/
+			var g1Field = document.getElementById('para');
+			var select1 = g1Field.selectedIndex;
+			var g1value = g1Field.options[select1].value;
+			/*****										*****/
+			//BT[30] = h1value;
+			if(gvalue == 'T'){
+				h1value *= 1000000000000;
+			}
+			if(gvalue == 'G'){
+				h1value *= 1000000000;
+			}
+			if(gvalue == 'M'){
+				h1value *= 1000000;
+			}
+			if(gvalue == 'k'){
+				h1value *= 1000;
+			}
+			if(gvalue == 'm'){
+			h1value *= 0.001;
+			}
+			if(gvalue == 'm1'){
+				h1value *= 0.000001;
+			}
+			if(gvalue == 'n'){
+				h1value *= 0.000000001;
+			}
+			if(gvalue == 'p'){
+				h1value *= 0.000000000001;
+			}
+			if(g1value == 'T'){
+				text[37].innerHTML = h1value/1000000000000;
+			}
+			if(g1value == 'G'){
+				text[37].innerHTML = h1value/1000000000;
+			}
+			if(g1value == 'M'){
+				text[37].innerHTML = h1value/1000000;
+			}
+			if(g1value == 'k'){
+				text[37].innerHTML = h1value/1000;
+			}
+			if(g1value == 'v'){
+				text[37].innerHTML = h1value;
+			}
+			if(g1value == 'm'){
+				text[37].innerHTML = h1value*1000;
+			}
+			if(g1value == 'm1'){
+				text[37].innerHTML = h1value*1000000;
+			}
+			if(g1value == 'n'){
+				text[37].innerHTML = h1value*1000000000;
+			}
+			if(g1value == 'p'){
+				text[37].innerHTML = h1value*1000000000000;
+			}
+			console.log(text[37]);
+		});
 /*****													*****/
 	}
 //*****	Fim da função que verifica o botão pressionado	*****
@@ -187,78 +261,7 @@ window.addEventListener('load', function(){
 		BT[numButton] = document.getElementById(BT[numButton]);		//Botão
 	}
 	pressButton();
-	//get result01
-	var s1Btn = document.getElementById('b31');
-	s1Btn.addEventListener('click', function(){
-		//var rst = document.getElementById('result01');
-		/*****					Inpur				*****/
-		var h1Field = document.getElementById('grand');
-        var h1value = h1Field.valueAsNumber;
-		/*****			Entrada de valores			*****/
-        var gField = document.getElementById('de');
-        var select = gField.selectedIndex;
-        var gvalue = gField.options[select].value;
-		/*****										*****/
-		/*****			Saída de valores			*****/
-		var g1Field = document.getElementById('para');
-        var select1 = g1Field.selectedIndex;
-        var g1value = g1Field.options[select1].value;
-		/*****										*****/
-		//BT[30] = h1value;
-		if(gvalue == 'T'){
-			h1value *= 1000000000000;
-		}
-		if(gvalue == 'G'){
-			h1value *= 1000000000;
-		}
-		if(gvalue == 'M'){
-			h1value *= 1000000;
-		}
-		if(gvalue == 'k'){
-			h1value *= 1000;
-		}
-		if(gvalue == 'm'){
-			h1value *= 0.001;
-		}
-		if(gvalue == 'm1'){
-			h1value *= 0.000001;
-		}
-		if(gvalue == 'n'){
-			h1value *= 0.000000001;
-		}
-		if(gvalue == 'p'){
-			h1value *= 0.000000000001;
-		}
-		if(g1value == 'T'){
-			text[37].innerHTML = h1value/1000000000000;
-		}
-		if(g1value == 'G'){
-			text[37].innerHTML = h1value/1000000000;
-		}
-		if(g1value == 'M'){
-			text[37].innerHTML = h1value/1000000;
-		}
-		if(g1value == 'k'){
-			text[37].innerHTML = h1value/1000;
-		}
-		if(g1value == 'v'){
-			text[37].innerHTML = h1value;
-		}
-		if(g1value == 'm'){
-			text[37].innerHTML = h1value*1000;
-		}
-		if(g1value == 'm1'){
-			text[37].innerHTML = h1value*1000000;
-		}
-		if(g1value == 'n'){
-			text[37].innerHTML = h1value*1000000000;
-		}
-		if(g1value == 'p'){
-			text[37].innerHTML = h1value*1000000000000;
-		}
-		console.log(text[37]);
-	});
-	function blockKeyCTRL(evt){					//Bloqueio contra cópia da página HTML
+	function blockKeyCTRL(evt){										//Bloqueio contra cópia da página HTML
 		if ( evt.keyCode == 17 )
 			return false;
 		else
