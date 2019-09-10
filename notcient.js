@@ -177,7 +177,6 @@ window.addEventListener('load', function(){
 /*****													*****/
 /*****			Montagem da tabela do item 1.7			*****/
 		//get result01
-
 		BT[30].addEventListener('click', function(){
 			//var rst = document.getElementById('result01');
 			/*****					Inpur				*****/
