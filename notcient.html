@@ -6,7 +6,6 @@
         <meta name="description" content="Notação Cientifica">
         <link type="text/css" rel="stylesheet" href="notcient.css">	<!-- Definição de estilo no arquivo CSS -->
         <link type="text/css" rel="stylesheet" href="math.css">     <!-- Definição de estilo no arquivo CSS -->
-        <link type="text/css" rel="stylesheet" href="print.css">	<!-- Definição de estilo no arquivo CSS -->
     </head>
     <body oncontextmenu="return false" ondragstart="return false" onselectstart="return false" onKeyDown='blockKeyCTRL(event);' >
         <header>
@@ -51,9 +50,8 @@
                     <tr><td>zepto</td><td>z</td><td>10<sup>-21</sup></td><td>0,000000000000000000001</td></tr>
                     <tr><td>yocto</td><td>y</td><td>10<sup>-24</sup></td><td>0,000000000000000000000001</td></tr>
                 </table>
-                <section id="sheet01">
-                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                </section>
+                <p id="sheet01"><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
                 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
                     <mfenced>
                         <mtable>
@@ -81,11 +79,8 @@
                 </table>
 				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
                 <hr class="line_hr">
-                <section id="sheet01">
-                    <p><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
-                </section>
+                <p id="sheet01"><br><br><br></p>
                 <section id="indice_01">
-                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
                     <h2>1.1 - A notação científica</h2>
                     <p>&emsp;A notação científica serve para expressar números muito grandes ou muito pequenos. O segredo é multiplicar um número pequeno ou grande por uma potência de 10. A forma de uma notação científica é: m x 10<sup>e</sup> ou m . 10<sup>e</sup>.<br>
                     &emsp;Onde:<br>
@@ -94,51 +89,63 @@
                     &emsp;&emsp;A mantissa sempre será um valor entre 1 e 999, esses valores podem ser positivos ou negativos.<br>
                     &emsp;&emsp;2,5 x 10<sup>e</sup><br>
                     &emsp;&emsp;26,58 x 10<sup>e</sup><br>
-                    &emsp;&emsp;550,97 x 10<sup>e</sup><br>
-                    &emsp;Já o expoente vária de três em três, positiva ou negativamente, ou seja de mil em mil, tanto dividindo quanto multiplicando.<br>
-                    &emsp;&emsp;2,5 x 10<sup>3</sup><br>
-                    &emsp;&emsp;26,58 x 10<sup>-12</sup><br>
-                    &emsp;&emsp;550,97 x 10<sup>-9</sup><br>
-                    &emsp;Assim podemos observar na “figura 1” o que foi dito até o momento:<br>
-                    <img src="figura_01.png">
-                    &emsp;Observemos um exemplo prático do que foi transcrito anteriormente, com os expoentes positivos, pegamos o 2,5 x 10<sup>3</sup> e o posicionamos na tabela, como mostrado na figura 2:<br>
+                    &emsp;&emsp;550,97 x 10<sup>e</sup>
+                    </p>
+                    <p id="sheet01"><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
+                    <p>
+                        &emsp;Já o expoente vária de três em três, positiva ou negativamente, ou seja de mil em mil, tanto dividindo quanto multiplicando.<br>
+                        &emsp;&emsp;2,5 x 10<sup>3</sup><br>
+                        &emsp;&emsp;26,58 x 10<sup>-12</sup><br>
+                        &emsp;&emsp;550,97 x 10<sup>-9</sup><br>
+                        &emsp;Assim podemos observar na “figura 1” o que foi dito até o momento:<br>
+                        <img src="figura_01.png">
+                        &emsp;Observemos um exemplo prático do que foi transcrito anteriormente, com os expoentes positivos, pegamos o 2,5 x 10<sup>3</sup> e o posicionamos na tabela, como mostrado na figura 2:
+                    </p>
                     <img src="figura_02.png">
-                    &emsp;então multiplicamos o valor por mil e sabemos o valor representado de forma natural:<br>
-                    &emsp;&emsp;2,5 x10<sup>3</sup> = 2,5 x 1.000 = 2.500<br>
-                    <section id="sheet01">
-                        <p><br><br></p>
-                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                    </section>
-                    &emsp;Observamos, também, esta disposição de outra forma como abaixo demonstrado na figura 3:<br>
+                    <p>
+                        &emsp;então multiplicamos o valor por mil e sabemos o valor representado de forma natural:<br>
+                        &emsp;&emsp;2,5 x10<sup>3</sup> = 2,5 x 1.000 = 2.500<br>
+                        &emsp;Observamos, também, esta disposição de outra forma como abaixo demonstrado na figura 3:
+                    </p>
                     <img src="figura_03.png">
-                    &emsp;Montamos o nosso sistema de outra forma:<br>
-                    &emsp;&emsp;10<sup>3</sup> = 10 x 10<sup>2</sup> = 10 x 10 x 10<sup>1</sup> = 10 x 10 x 10, assim nosso cálculo será,<br>
-                    &emsp;&emsp;2,5 x 10<sup>3</sup> = 2,5 x 10 x 10<sup>2</sup> = 25 x 10<sup>2</sup> = 25 x 10 x 10<sup>1</sup> = 250 x 10 = 2500<br>
-                    &emsp;Façam agora paraos seguintes valores<br>
-                    &emsp;&emsp;a) 3,6 x 10<sup>6</sup><br>
-                    &emsp;&emsp;b) 550,97 x 10<sup>9</sup><br>
-                    &emsp;&emsp;c) 26,58 x 10<sup>12</sup><br>
-                    &emsp;Observemos, agora, um exemplo prático do que foi transcrito anteriormente, com os expoentes negativos, pegamos o 2,5 x 10<sup>-3</sup> e o posicionamos na tabela, como mostradona figura 4:<br>
+                    <p>
+                        &emsp;Montamos o nosso sistema de outra forma:<br>
+                        &emsp;&emsp;10<sup>3</sup> = 10 x 10<sup>2</sup> = 10 x 10 x 10<sup>1</sup> = 10 x 10 x 10, assim nosso cálculo será,<br>
+                        &emsp;&emsp;2,5 x 10<sup>3</sup> = 2,5 x 10 x 10<sup>2</sup> = 25 x 10<sup>2</sup> = 25 x 10 x 10<sup>1</sup> = 250 x 10 = 2500<br>
+                        &emsp;Façam agora paraos seguintes valores<br>
+                        &emsp;&emsp;a) 3,6 x 10<sup>6</sup><br>
+                        &emsp;&emsp;b) 550,97 x 10<sup>9</sup><br>
+                        &emsp;&emsp;c) 26,58 x 10<sup>12</sup>
+                    </p>
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
+                    <p>
+                        &emsp;Observemos, agora, um exemplo prático do que foi transcrito anteriormente, com os expoentes negativos, pegamos o 2,5 x 10<sup>-3</sup> e o posicionamos na tabela, como mostradona figura 4:
+                    </p>
                     <img src="figura_04.png">
-                    &emsp;então multiplicamos  o valor por mil e sabemos o valor representado de forma natural:<br>
-                    &emsp;&emsp;2,5 x<sup>-3</sup> = 2,5 x 0,001 = 0,0025<br>
-                    &emsp;Observamos, também, esta disposição de outra forma como abaixo demonstradona figura 5:<br>
+                    <p>
+                        &emsp;então multiplicamos  o valor por mil e sabemos o valor representado de forma natural:<br>
+                        &emsp;&emsp;2,5 x<sup>-3</sup> = 2,5 x 0,001 = 0,0025<br>
+                        &emsp;Observamos, também, esta disposição de outra forma como abaixo demonstradona figura 5:
+                    </p>
                     <img src="figura_05.png">
-                    &emsp;Montamos o nosso sistema de outra forma:<br>
-                    &emsp;&emsp;10<sup>-3</sup> = 0,1 x 10<sup>-2</sup> = 0,1 x 0,1 x 10<sup>-1</sup> = 0,1 x 0,1 x 0,1, assim nosso calculo será,<br>
-                    &emsp;&emsp;2,5 x 10<sup>-2</sup> = 2,5 x 0,1 x 10<sup>-2</sup> = 0,25 x 10<sup>-2</sup> = 0,25 x 0,1 x 10<sup>-1</sup> = 0,025 x 10<sup>-1</sup> = 0,025 x 0,1 = 0,0025<br>
-                    &emsp;Façam agora paraos seguintes valores<br>
-                    &emsp;&emsp;a) 3,6 x 10<sup>-6</sup><br>
-                    &emsp;&emsp;b) 550,97 x 10<sup>-9</sup><br>
-                    &emsp;&emsp;c) 26,58 x 10<sup>-12</sup><br></p>
+                    <p>
+                        &emsp;Montamos o nosso sistema de outra forma:<br>
+                        &emsp;&emsp;10<sup>-3</sup> = 0,1 x 10<sup>-2</sup> = 0,1 x 0,1 x 10<sup>-1</sup> = 0,1 x 0,1 x 0,1, assim nosso calculo será,<br>
+                        &emsp;&emsp;2,5 x 10<sup>-2</sup> = 2,5 x 0,1 x 10<sup>-2</sup> = 0,25 x 10<sup>-2</sup> = 0,25 x 0,1 x 10<sup>-1</sup> = 0,025 x 10<sup>-1</sup> = 0,025 x 0,1 = 0,0025<br>
+                        &emsp;Façam agora paraos seguintes valores<br>
+                        &emsp;&emsp;a) 3,6 x 10<sup>-6</sup><br>
+                        &emsp;&emsp;b) 550,97 x 10<sup>-9</sup><br>
+                        &emsp;&emsp;c) 26,58 x 10<sup>-12</sup>
+                    </p>
                 </section>
                 <a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
                 <hr class="line_hr">
                 <section id="indice_02">
-                    <section id="sheet01">
-                        <p><br><br><br></p>
-                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                    </section>
+                    <p id="sheet01"><br><br><br></p>
                     <h2>1.2 – Múltiplos e submúltiplos</h2>
                     <p>&emsp;Abaixo mostramos as tabelas com múltiplos e submúltiplos mais usados na área técnica ou de engenharia elétrica:<br>
                     </p>
@@ -151,6 +158,8 @@
                         <tr><td>m&Omega;</td><td>miliohm</td><td>10<sup>-3</sup> &Omega;</td><td>0,001 &Omega;</td></tr>
                     </table>
                     <hr>
+                    <p id="sheet01"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
                     <table border="2">
                         <tr><th colspan="4">Múltiplos e submúltiplos mais comuns de capacitância elétrica:</th></tr>
                         <tr><td>mF</td><td>miliFarad</td><td>10<sup>-3</sup> F</td><td>0,001 F</td></tr>
@@ -175,10 +184,6 @@
                         <tr><td>mV</td><td>miliVolt</td><td>10<sup>-3</sup> V</td><td>0,001V</td></tr>
                     </table>
                     <hr>
-                    <section id="sheet01">
-                        <p><br></p>
-                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                    </section>
                     <table border="2">
                         <tr><th colspan="4">Múltiplos e submúltiplos mais comuns de corrente elétrica:</th></tr>
                         <tr><td>kA</td><td>QuiloAmpere</td><td>10<sup>3</sup> A</td><td>1.000 A</td></tr>
@@ -187,6 +192,8 @@
                         <tr><td>&micro;A</td><td>microAmpere</td><td>10<sup>-6</sup> A</td><td>0,00000 A</td></tr>
                     </table>
                     <hr>
+                    <p id="sheet01"><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
                     <table border="2">
                         <tr><th colspan="4">Múltiplos e submúltiplos mais comuns da potência elétrica:</th></tr>
                         <tr><td>GW</td><td>GigaWatt</td><td>10<sup>9</sup> W</td><td>1.000.000.000 W</td></tr>
@@ -198,75 +205,68 @@
 				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
                 <hr class="line_hr">
                 <section id="indice_03">
-                    <section id="sheet01">
-                        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
-                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                    </section>
+                    <p id="sheet01"><br><br><br></p>
                     <h2>1.3 - Exercícios resolvidos:</h2>
                         <hr>
                         <p>1) Transformar 5.000.000 V em kV:</p><br>
-                            <img src="figura_07.png">
-                            <table border="2">
-                                <tr><th>Resolução</th></tr>
-                                <tr>
-                                    <td>
-                                        &emsp;5.000.000 V&ensp;&#8658;&ensp;x kV&ensp;=&ensp;
-                                        (5.000.000&ensp;&divide;&ensp;1.000) kV
-                                        &ensp;=&ensp;5.000 kV&emsp;
-                                    </td>
-                                </tr>
-                            </table>
-                            <hr>
+                        <img src="figura_07.png">
+                        <table border="2">
+                            <tr><th>Resolução</th></tr>
+                            <tr>
+                                <td>
+                                    &emsp;5.000.000 V&ensp;&#8658;&ensp;x kV&ensp;=&ensp;
+                                    (5.000.000&ensp;&divide;&ensp;1.000) kV
+                                    &ensp;=&ensp;5.000 kV&emsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
                         <p>2) Transformar 0,0000056 A em μA:</p><br>
-                            <img src="figura_08.png">
-                            <table border="2">
-                                <tr><th>Resolução</th></tr>
-                                <tr>
-                                    <td>
-                                        &emsp;0,0000056 a&ensp;&#8658;&ensp;x &micro;A&ensp;=&ensp;
-                                        (0,0000056&ensp;&times;&ensp;1.000.000) &micro;A
-                                        &ensp;=&ensp;5,6 &micro;A&emsp;
-                                    </td>
-                                </tr>
-                            </table>
-                            <hr>
-                        <section id="sheet01">
-                            <p><br><br><br><br><br><br><br><br><br></p>
-                            <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                        </section>
+                        <img src="figura_08.png">
+                        <p id="sheet01"><br><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
+                        <table border="2">
+                            <tr><th>Resolução</th></tr>
+                            <tr>
+                                <td>
+                                    &emsp;0,0000056 a&ensp;&#8658;&ensp;x &micro;A&ensp;=&ensp;
+                                    (0,0000056&ensp;&times;&ensp;1.000.000) &micro;A
+                                    &ensp;=&ensp;5,6 &micro;A&emsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
                         <p>3) Transformar 2,4 W em mW:</p><br>
-                            <img src="figura_09.png">
-                            <table border="2">
-                                <tr><th>Resolução</th></tr>
-                                <tr>
-                                    <td>
-                                        &emsp;2,4 W&ensp;&#8658;&ensp;x mW&ensp;=&ensp;
-                                        (2,4&ensp;&times;&ensp;1.000) mW
-                                        &ensp;=&ensp;2.400 mW&emsp;
-                                    </td>
-                                </tr>
-                            </table>
-                            <hr>
+                        <img src="figura_09.png">
+                        <table border="2">
+                            <tr><th>Resolução</th></tr>
+                            <tr>
+                                <td>
+                                    &emsp;2,4 W&ensp;&#8658;&ensp;x mW&ensp;=&ensp;
+                                    (2,4&ensp;&times;&ensp;1.000) mW
+                                    &ensp;=&ensp;2.400 mW&emsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
                         <p>4) Transformar 6 μW em W:</p><br>
-                            <img src="figura_10.png"><br>
-                            <table border="2">
-                                <tr><th>Resolução</th></tr>
-                                <tr>
-                                    <td>
-                                        &emsp;6 &micro;W&ensp;&#8658;&ensp;x W&ensp;=&ensp;
-                                        (6&ensp;&divide;&ensp;1.000.000) W
-                                        &ensp;=&ensp;0,000006 W&emsp;
-                                    </td>
-                                </tr>
-                            </table>
-                            <hr>
-                        <section id="sheet01">
-                            <p><br><br><br><br><br><br><br><br><br><br><br></p>
-                            <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                        </section>
+                        <img src="figura_10.png"><br>
+                        <table border="2">
+                            <tr><th>Resolução</th></tr>
+                            <tr>
+                                <td>
+                                    &emsp;6 &micro;W&ensp;&#8658;&ensp;x W&ensp;=&ensp;
+                                    (6&ensp;&divide;&ensp;1.000.000) W
+                                    &ensp;=&ensp;0,000006 W&emsp;
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                        <p id="sheet01"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
                         <p>5) Transformar 600 μW em mW:</p><br>
-                            <img src="figura_11.png"><br>
-                            <table border="2">
+                        <img src="figura_11.png"><br>
+                        <table border="2">
                                 <tr><th>Resolução</th></tr>
                                 <tr>
                                     <td>
@@ -280,9 +280,7 @@
 				<a href="#notinic" title="Notação Cientifica" class="a_nav">topo</a>
                 <hr class="line_hr">
                 <section id="indice_04">
-                    <section id="sheet01">
-                        <p><br><br><br></p>
-                    </section>
+                    <p id="sheet01"><br><br><br></p>
                     <h2>1.4 – Exercícios propostos:</h2>
                     <p>1) Preencha as lacunas que faltam:</p>
                     <hr>
@@ -342,10 +340,10 @@
 						<tr>
                     </table>
 					<hr>
-                    <section id="sheet01">
-                        <p><br><br><br><br><br></p>
-                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                    </section>
+                    <p id="sheet01">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br>
+                    </p>
+                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
 					<p>2) Efetue as conversões abaixo:</p>
 					<p>&emsp;a) 12 V em mV</p>
 					<table border="2">
@@ -362,10 +360,8 @@
 						<tr><th>Faça a resolução do exercício</th></tr>
 						<tr><td><input type="text" class="box_input"/></td></tr>
 					</table>
-					<section id="sheet01">
-                        <p><br><br><br><br><br></p>
-                        <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
-                    </section>
+					<p id="sheet01"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>""<br></p>
+                    <h1 id="h1_p">Apostila - Notação Científica - José Antonio Sanches Lapaz</h1>
                     <p>&emsp;d) 0,005 nV em pV</p>
 					<table border="2">
 						<tr><th>Faça a resolução do exercício</th></tr>

@@ -20,7 +20,7 @@
 /************************
  ***** Neutralidade *****
  ************************/
-h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, tr, th, td, teble, body, header, nav, div, article, section, aside, footer, button, input{
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, html, tr, th, td, table, body, header, nav, div, article, section, aside, footer, button, input, math, mtr, mth, mtd, mrow, mtable, mfenced, msemantic, print{
   margin: 0;
   padding: 0;
 }
@@ -631,6 +631,129 @@ input{
 	.a_nav{
 		margin: 5px;
 		font-size: 0.4em;
+	}
+}
+/********************************************
+ *****              Fim                 *****
+ ********************************************/
+
+/********************************************
+ *****            Impressora            *****
+ *****             Folha A4             *****
+ ********************************************/
+@media only print{
+	@page{
+        margin: 0cm 2cm 2cm 3cm;
+    }
+    /**********************************************
+     ***** TAG de Section estrutura da página *****
+     **********************************************/
+	body{
+		background-color: #FFFFFF;
+	}
+    div{
+        width: auto;
+        height: auto;
+    }
+    article{
+        width: 16cm;
+        height: 24,7cm;
+        text-align: justify;
+    }
+    nav, footer, header{
+        display: none;
+    }
+    /**************************************
+     ***** TAG de Estrutura de texto  *****
+     **************************************/
+    h2{
+        font-size: 1em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+    a:link, a:visited, a:hover{
+		display: none;
+	}
+    th{
+        text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+    /*************************************************
+     ***** Estrutura das id's do corpo da pagina *****
+     *************************************************/
+	#h1_c{
+        display: none;
+	}
+    #h1_p{
+        visibility: visible;
+        font-size: 1em;
+        text-shadow: none;
+        margin: 1.4cm auto;
+        text-align: center;
+    }
+    #sheet01{
+        visibility: visible;
+        font-size: 0.1em;
+        color: #FFFFFF;
+    }
+    #indice_05, #indice_06, #indice_07{
+        display: none;
+    }
+	/**************************************
+	 ***** TAG de Estrutura de imagem *****
+	 **************************************/
+	img{
+		max-width: 80%;
+		max-height: 80%;
+		margin: 15px 17.5%;
+		border-width: 1px;
+		border-style: solid;
+		border-color: blue;
+	}
+	hr{
+		display: none;
+	}
+	/**************************************
+	 ***** TAG de Estrutura de tabela *****
+	 **************************************/
+	table{
+		min-width: 70%;
+		min-height: 50%;
+		margin: 15px auto;
+		background-color: #FFFFFF;
+	}
+    mtable{
+        margin: 20px auto;
+    }
+    mtr{
+        border-width: 5px;
+        border-style: solid;
+    }
+    mtd{   
+        font-size: 0.75em;
+    }
+	/**************************************
+	 ***** TAG de Estrutura de box    *****
+	 **************************************/
+	button{
+		dispaly: none;
+	}
+	/**************************************
+	 *****     Classe de estrutura    *****
+	 **************************************/
+	.line_hr, .a_footer, .a_nav, .press_bt{
+		display: none;
+	}
+	.p_table{
+		margin: 10px auto;
+	}
+	.box_input{
+		width: 99%;
+		height: 160px;
+		text-align: left;
 	}
 }
 /********************************************
